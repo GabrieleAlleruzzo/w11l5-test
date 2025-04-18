@@ -11,8 +11,8 @@ function NavScrollExample() {
     <Navbar expand="lg" style={{ background: "#2e2e2e" }}>
       <Container fluid className="d-flex justify-content-between">
         <Navbar2 />
-        //a 30 min dalla consegna sono riuscito a integrare questo bottone
-        OffCanva
+        {/*a 30 min dalla consegna sono riuscito a integrare questo bottone
+        OffCanva*/}
         <Navbar.Brand href="#">
           <img src="./src/assets/music.svg" alt="apple logo" />
         </Navbar.Brand>
