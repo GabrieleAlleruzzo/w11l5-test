@@ -16,7 +16,7 @@ const Uscite = () => {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        // La risposta ha un campo 'data' che contiene l'array dei risultati
+
         setReleases(data.data);
         setLoading(false);
       } catch (e) {
@@ -40,7 +40,7 @@ const Uscite = () => {
     <Container className="my-4">
       <Row>
         <Col>
-          <h1 className="text-start">Risultati Ricerca Queen</h1>
+          <h5 className="text-start text-white">Nuove uscite</h5>
         </Col>
       </Row>
       <Row className="d-flex">
@@ -50,13 +50,13 @@ const Uscite = () => {
               <Card.Img
                 className="rounded-0"
                 variant="top"
-                src={release.album?.cover_medium} // Utilizziamo la copertina media dell'album
+                src={release.album?.cover_medium}
                 alt={release.title}
                 style={{ maxHeight: "200px", objectFit: "cover" }}
               />
               <Card.Body className="p-0">
                 <Card.Title
-                  className="my-1 fw-bold"
+                  className="my-1 fw-bold text-white"
                   style={{ fontSize: "1rem" }}
                 >
                   {release.title}

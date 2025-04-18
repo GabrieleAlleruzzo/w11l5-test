@@ -6,7 +6,7 @@ const novita = () => {
     <Container className="my-4">
       <Row>
         <Col>
-          <h1 className="text-start">Nuovi episodi radio </h1>
+          <h5 className="text-start text-white">Nuovi episodi radio </h5>
         </Col>
         <Row className="d-flex justify-content-between">
           <Col sx={12} sm={6} lg={2}>
@@ -20,7 +20,7 @@ const novita = () => {
                   alt="thumbnail"
                 />
                 <Card.Title
-                  className="my-1"
+                  className="my-1 text-white"
                   style={{ fontSize: "10px", fontWeight: "bold" }}
                 >
                   Lorem Ipsum Titolo

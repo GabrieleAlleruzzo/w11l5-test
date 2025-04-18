@@ -7,15 +7,15 @@ const novita = () => {
       <Row>
         <Col>
           <h1 className="text-start">Novità</h1>
-          <hr />
+          <hr className="border border-1 border-white" />
         </Col>
         <Row className="d-flex ">
-          <Col>
+          <Col xs={12} md={12} lg={6}>
             {/* prima card*/}
             <Card className="p-0  pt-2 text-start bg-transparent border-0">
               <Card.Body className="p-0">
                 <Card.Title
-                  className="ps-2"
+                  className="ps-2 text-white"
                   style={{ fontSize: "12px", fontWeight: "bold" }}
                 >
                   NUOVA STAZIONE RADIO
@@ -33,7 +33,7 @@ const novita = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
+          <Col xs={12} md={12} lg={6}>
             {/* seconda card*/}
             <Card className="p-0  pt-2 text-start bg-transparent border-0">
               <Card.Body className="p-0">

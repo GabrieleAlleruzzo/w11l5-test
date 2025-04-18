@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Player from "./Components/Player";
 import Novità from "./Components/Novità";
+import Tabs from "./Components/Tabs";
+import Navbar2 from "./Components/Navbar2";
 import NuoveUscite from "./Components/NuoveUscite";
 import EpisodiRadio from "./Components/EpisodiRadio";
 import { useState } from "react";
@@ -24,6 +26,7 @@ function App() {
           <EpisodiRadio />
           <Player />
           <NuoveUscite />
+          <Tabs />
         </main>
       </div>
       <footer>

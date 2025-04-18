@@ -1,17 +1,20 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-const player = () => {
+const Player = () => {
   return (
-    <div className="fixed-bottom bg-dark m-2 border border-1 rounded rounded-3">
-      <Container sticky="bottom">
+    <div
+      id="plyr"
+      className="fixed-bottom bg-black m-2 rounded rounded-3 d-block d-lg-none shadow"
+    >
+      <Container sticky="bottom" className=" py-2">
         <Row>
-          <Col className="d-flex justify-content-between m-1 text-light">
+          <Col className="d-flex justify-content-between m-1 text-light ">
             <div>
-              <i class="bi bi-music-note-beamed"></i>
+              <i className="bi bi-music-note-beamed border border-1 border-white p-1 rounded-2"></i>
             </div>{" "}
             <div>
-              <i class="bi bi-play-circle-fill text-light"></i>{" "}
-              <i class="bi bi-fast-forward-circle-fill text-light"></i>
+              <i className="bi bi-play-circle-fill text-light"></i>{" "}
+              <i className="bi bi-fast-forward-circle-fill text-light"></i>
             </div>
           </Col>
         </Row>
@@ -20,4 +23,4 @@ const player = () => {
   );
 };
 
-export default player;
+export default Player;
